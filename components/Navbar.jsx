@@ -1,7 +1,10 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
-
+import { usePathname } from 'next/navigation';
 const Navbar = () => {
+	const pathname = usePathname();
+	if (pathname === '/signin') return null;
 	return (
 		<nav className=' p-4 px-4 lg:px-16 xl:px-48 flex items-center justify-between border-b-4 border-[#F4F6F8]'>
 			<div className='flex items-center'>
@@ -17,7 +20,9 @@ const Navbar = () => {
 				</a>
 			</div>
 
-			<button className=' text-[#120B48] font-semibold text-xl px-4 py-2 rounded-md hover:text-[#29244e] transition duration-300'>Get Started</button>
+			<Link href='/signin' className=' text-[#120B48] font-semibold text-xl px-4 py-2 rounded-md hover:text-[#29244e] transition duration-300'>
+				Get Started
+			</Link>
 		</nav>
 	);
 };
