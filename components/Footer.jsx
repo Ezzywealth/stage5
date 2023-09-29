@@ -1,9 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
-import { usePathname } from 'next/navigation';
+
 const Footer = () => {
-	const pathname = usePathname();
-	if (pathname === '/signin') return null;
 	return (
 		<footer className='bg-[#120B48] text-white py-20 px-4 lg:px-16 xl:px-48 w-full'>
 			<div className='w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  justify-center'>

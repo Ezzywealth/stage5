@@ -1,14 +1,15 @@
 import Image from 'next/image';
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import { FaFacebook, FaGoogle } from 'react-icons/fa';
+import { useRouter } from 'next/router';
 
 const LoginPage = () => {
 	const { register, handleSubmit, errors } = useForm();
-
+	const router = useRouter();
 	const onSubmit = (data) => {
 		// Handle form submission here
 		console.log(data);
+		router.push('/home');
 	};
 
 	return (
