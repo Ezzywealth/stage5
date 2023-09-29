@@ -1,10 +1,12 @@
 import React from 'react';
 import ExtensionModal from '../components/Extensions/ExtensionModal';
+import RecordModal from '../components/Recorder/RecordModal';
 
 const ScreenRecoder = () => {
 	return (
-		<main>
+		<main className='flex gap-4'>
 			<ExtensionModal />
+			<RecordModal />
 		</main>
 	);
 };

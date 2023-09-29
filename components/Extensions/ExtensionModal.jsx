@@ -36,7 +36,7 @@ const ExtensionModal = () => {
 	};
 
 	return (
-		<main className='flex w-full  justify-center font-[Work Sans]'>
+		<main className='flex rounded-2xl  justify-center font-[Work Sans]'>
 			<section className='shadow-2xl w-[410px] divide-y-2'>
 				<section className=' p-4'>
 					<div className='flex justify-between mb-6'>
