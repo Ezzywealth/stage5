@@ -6,9 +6,10 @@ const Navbar = () => {
 	return (
 		<nav className=' p-4 px-4 lg:px-16 xl:px-48 flex items-center justify-between border-b-4 border-[#F4F6F8]'>
 			<div className='flex items-center'>
-				<Image src='/assets/images/logo.png' alt='Logo' width={160} height={70} className=' mr-2' />
+				<Link href='/' className=''>
+					<Image src='/assets/images/logo.png' alt='Logo' width={160} height={70} className=' mr-2' />
+				</Link>
 			</div>
-
 			<div className='flex gap-8'>
 				<a href='#features' className='text-[#000000] font-semibold tracking-wider text-lg transition duration-300'>
 					Features

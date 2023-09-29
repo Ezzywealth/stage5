@@ -6,7 +6,9 @@ const AuthNav = () => {
 	return (
 		<nav className=' p-4 px-4 lg:px-16 xl:px-36 flex items-center justify-between '>
 			<div className='flex items-center'>
-				<Image src='/assets/images/logo.png' alt='Logo' width={160} height={70} className=' mr-2' />
+				<Link href='/'>
+					<Image src='/assets/images/logo.png' alt='Logo' width={160} height={70} className=' mr-2' />
+				</Link>
 			</div>
 
 			<section className='flex items-center gap-2'>
