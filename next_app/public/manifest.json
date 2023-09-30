@@ -1,0 +1,15 @@
+{
+	"manifest_version": 3,
+	"name": "HelpMeOut",
+	"version": "1.0",
+	"description": "Description of your extension",
+	"action": {
+		"default_popup": "screenrecoder.html",
+		"default_icon": {
+			"16": "/assets/images/logo.png",
+			"48": "/assets/images/logo.png",
+			"128": "/assets/images/logo.png"
+		}
+	},
+	"permissions": ["activeTab"]
+}
